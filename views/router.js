@@ -20,6 +20,11 @@ router.route("/plants/:plantId")
 // router.route("/plants/:plantId/reviews")
 //   .post(commentController.createComment)
 
+// router.route("cart")
+//   .get(userController.cartPlant)
+//   .delete(userController.deletePlant)
+
+
 router.route("/register")
   .post(userController.register)
 

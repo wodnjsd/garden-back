@@ -143,7 +143,7 @@ export default [
 {
   name: "",
   commonName: "curly spider plant",
-  about: "A classic of the houseplant world, the curly spider plant has been grown indoors for decades because it's incredibly easy to take care of. In the wild, it's most commonly found in tropical parts of Africa and Australia."
+  about: "A classic of the houseplant world, the curly spider plant has been grown indoors for decades because it's incredibly easy to take care of. In the wild, it's most commonly found in tropical parts of Africa and Australia.",
   likes: "light watering, most light conditions",
   size: "small",
   image: "",

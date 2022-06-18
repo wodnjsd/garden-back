@@ -1,6 +1,6 @@
 // ? A file containing our environment variables
 
-export const dbURL = 'mongodb://127.0.0.1:27017/plantdb'
+export const dbURL = 'mongodb://127.0.0.1:27017/plantsdb'
 // const mongoURL = 'mongodb://127.0.0.1:27017/plantdb'
 
 // ! If mocha is running your tests, line 7 will be true, and so the

@@ -14,13 +14,13 @@ const plantSchema = new mongoose.Schema({
   about: { type: String, required: true },
   likes: { type: String, required: true },
   size: { type: String, required: true },
-  image: { type: String, required: true },
+  image: { type: String, required: false },
   price: { type: Number, required: true },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   // ! Add comments to pokemon
   // ! Embedding a schema in pokemon. Subdocument.
   // ! We're giving pokemon an array of comments. 
-  comments: [reviewSchema],
+  reviews: [reviewSchema],
 })
 
 export default mongoose.model('Plant', plantSchema)

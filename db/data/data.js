@@ -164,7 +164,7 @@ export default [
 
 {
   name: '',
-  commonName: Pachira Aquatica",
+  commonName: "Pachira Aquatica",
   about: "There’s real charm to this houseplant, with its umbrella-like growth and beautiful plaited trunk. It’s pretty easy to care for, too. All it asks is a fairly bright spot in your home and an occasional drink.",
   size: "medium",
   image: "",

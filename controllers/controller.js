@@ -7,10 +7,11 @@ async function getPlants(req, res) {
   try {
     // ! Populating the user field, with the full object.
     const allPlants = await Plant.find().populate('user')
-      .populate('review.user')
-      .populate('cart.user')
+      // .populate('review.user')
+      // .populate('cart.user')
     res.json(allPlants)
   } catch (e) {
+    console.log(e)
     res.status(500).send({ message: "We had problems handling your request on our side 😖. Please try again later." })
   }
 }

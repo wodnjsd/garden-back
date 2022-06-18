@@ -1,8 +1,8 @@
 export default [
   {
-    "username": "nick",
-    "password": "nick31%aAhello",
-    "passwordConfirmation": "nick31%aAhello",
-    "email": "nick@nick.com",
+    "username": "spike",
+    "password": "Spike12345!!",
+    "passwordConfirmation": "Spike12345!!",
+    "email": "spike@ibegyourgarden.com",
   }
 ]

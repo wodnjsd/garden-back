@@ -7,8 +7,8 @@ async function getPlants(req, res) {
   try {
     // ! Populating the user field, with the full object.
     const allPlants = await Plant.find().populate('user')
-      .populate('review.user')
-      .populate('cart.user')
+      // .populate('review.user')
+      // .populate('cart.user')
     res.json(allPlants)
   } catch (e) {
     res.status(500).send({ message: "We had problems handling your request on our side 😖. Please try again later." })
@@ -32,8 +32,8 @@ async function getSinglePlant(req, res) {
   try {
     const plantId = req.params.plantId
     const plant = await Plant.findById(plantId).populate('user')
-      .populate('review.user')
-      .populate('cart.user')
+      // .populate('review.user')
+      // .populate('cart.user')
 
     if (!plant) return res.json({ message: "Plant not found" })
 

@@ -3,6 +3,7 @@
 export default [
   {
     name: 'spike',
+    commonName: '',
     about: 'spiky',
     likes: 'light',
     size: 'small',

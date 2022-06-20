@@ -33,13 +33,14 @@ async function getSinglePlant(req, res) {
   try {
     const plantId = req.params.plantId
     const plant = await Plant.findById(plantId).populate('user')
-    // .populate('review.user')
+      .populate('reviews.user')
     // .populate('cart.user')
 
     if (!plant) return res.json({ message: "Plant not found" })
 
     res.json(plant)
   } catch (e) {
+    console.log(e)
     res.json({ message: 'There was problem trying to get this plant' })
   }
 }

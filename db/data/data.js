@@ -147,7 +147,7 @@ export default [
     likes: "light watering, most light conditions",
     size: "small",
     image: "",
-    price: 8
+    price: 8,
 
   },
   {

@@ -9,7 +9,7 @@ async function createReview(req, res) {
     // ! Grab the info from the request body.
     const review = req.body
     // ! Get the pokemon we're comment on.
-    const plant = await Plant.findById(plantId)
+    const plant = await Plant.findById(plantId).populate('user')
     // ! Handle it if no pokemon is found
     if (!plant) {
       return res.json({ message: 'No plant found' })

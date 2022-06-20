@@ -18,13 +18,14 @@ async function createReview(req, res) {
     review.user = user
     // ! Pushing our new comment to this pokemon does
     // ! NOT update it in the database YET. 
-    plant.comments.push(review)
+    plant.reviews.push(review)
 
     // ! So we need to save it to the database.
     const savedPlant = await plant.save()
     // ! Sending back the comment
     res.json(savedPlant)
   } catch (e) {
+    console.log(e)
     res.json({ message: "There was a problem reviewing" })
   }
 }

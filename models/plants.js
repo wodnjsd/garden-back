@@ -10,7 +10,7 @@ const reviewSchema = new mongoose.Schema({
 })
 
 const plantSchema = new mongoose.Schema({
-  name: { type: String, required: true },
+  name: { type: String, required: false },
   commonName: { type: String, required: true },
   about: { type: String, required: true },
   commonName: { type: String, required: true },

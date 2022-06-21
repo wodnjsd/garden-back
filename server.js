@@ -7,6 +7,7 @@ import logger from "./middleware/logger.js"
 import router from "./views/router.js"
 
 import mongoSanitize from 'express-mongo-sanitize';
+import errorHandler from "./middleware/errorHandler.js";
 
 // ! Moved the app out of startServer so I can export it below
 const app = express()
@@ -20,6 +21,8 @@ async function startServer() {
     app.use(logger)
 
     app.use('/api', router)
+
+    app.use(errorHandler);
 
     await connectToDb()
 

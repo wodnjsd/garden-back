@@ -42,7 +42,7 @@ userSchema.methods.validatePassword = function validatePassword(password) {
   return bcrypt.compareSync(password, this.password)
 }
 
-userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: true, _id: true } }))
+userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: false, _id: false } }))
 userSchema.plugin(uniqueValidator)
 
 export default mongoose.model('User', userSchema)

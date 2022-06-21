@@ -3,17 +3,16 @@ import mongoose from 'mongoose'
 // ! Brand new schema for comments.
 const reviewSchema = new mongoose.Schema({
   content: { type: String, required: true },
-  rating: { type: Number, required: true },
+  rating: { type: Number, required: false },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
 }, { // ! This is adding fields that mongoose supports for you. 
-  timestamps: true,
+  timestamp: true,
 })
 
 const plantSchema = new mongoose.Schema({
   name: { type: String, required: false },
   commonName: { type: String, required: true },
   about: { type: String, required: true },
-  commonName: { type: String, required: true },
   likes: { type: String, required: true },
   size: { type: String, required: true },
   image: { type: String, required: false },

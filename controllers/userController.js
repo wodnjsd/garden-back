@@ -4,18 +4,28 @@ import jwt from 'jsonwebtoken'
 // ! Importing my secret...
 import { secret } from '../config/environment.js'
 
-async function register(req, res) {
+async function register(req, res, next) {
   const body = req.body
   try {
     if (body.password !== body.passwordConfirmation) {
-      return res.status(422).json({ message: "Passwords do not match." })
+      return res.status(422).json({ 
+        message: "Passwords do not match.",
+        errors: {
+          passwordConfirmation: 'Passwords do not match',
+        }, 
+      })
     }
     const user = await User.create(body)
     res.status(201).json(user)
   } catch (err) {
-    res.status(422).json({ message: 'User has missing or invalid fields.' })
+    // res.status(422).json({ 
+    //   message: 'User has missing or invalid fields.',
+    //   errors: {
+    //     email: 'This email already exists',
+    next(err)
   }
 }
+  
 
 async function login(req, res) {
   try {
@@ -35,7 +45,8 @@ async function login(req, res) {
 
       res.json({ 
         message: "Login successful!", 
-        token, // ! Send back the token with the response. 
+        token,
+        user, // ! Send back the token with the response. 
       })
     } else {
       res.status(400).json({ message: "Login failed!" } )

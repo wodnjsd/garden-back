@@ -137,20 +137,14 @@ export default [
 //   image: "",
 //   price: 20,
 // },
-// {
-//   name: "",
-//   commonName: "Bay Tree",
-//   about: "The bay tree, or bay laurel, has been a beloved plant for centuries. The ancient Greeks and the ancient Romans considered it quite the status symbol. Wreaths of bay laurel were worn on the heads of the most important members of society and given as prizes in sporting competitions. Bay was a plant for champions. 
-
-//   You don't see a lot of people wearing it on their heads these days, but the bay tree is as popular as ever. It's an evergreen, which means it will look good on your patio or balcony all year round, and it's very easy to look after. It will love a sunny spot, though will be happy with a mix of sun and shade.
-  
-//   It likes gentle watering, so just give it a drink when the top two inches of soil feel dry. Don't be tempted to water it too heavily as it won't like soggy soil. Equally, don't let it dry out completely. Your plant will arrive in a nursery pot (the plastic pot it's been growing in). There's no need to remove it from this. Just place the whole thing inside a decorative pot.
-  
-//   One of the best things about bay is that you can pick off its leaves and use them in cooking. A bay leaf added to pasta sauce or stew will add subtle warm flavour. A leaf picked fresh off your plant will have much more flavour than any from the supermarket.",
-//   size: "large",
-//   image: "",
-//   price: 100,
-// },
+  {
+    name: "",
+    commonName: "Bay Tree",
+    about: "The bay tree, or bay laurel, has been a beloved plant for centuries. The ancient Greeks and the ancient Romans considered it quite the status symbol. Wreaths of bay laurel were worn on the heads of the most important members of society and given as prizes in sporting competitions. Bay was a plant for champions. You don't see a lot of people wearing it on their heads these days, but the bay tree is as popular as ever. It's an evergreen, which means it will look good on your patio or balcony all year round, and it's very easy to look after. It will love a sunny spot, though will be happy with a mix of sun and shade. It likes gentle watering, so just give it a drink when the top two inches of soil feel dry. Don't be tempted to water it too heavily as it won't like soggy soil. Equally, don't let it dry out completely. Your plant will arrive in a nursery pot (the plastic pot it's been growing in). There's no need to remove it from this. Just place the whole thing inside a decorative pot.One of the best things about bay is that you can pick off its leaves and use them in cooking. A bay leaf added to pasta sauce or stew will add subtle warm flavour. A leaf picked fresh off your plant will have much more flavour than any from the supermarket.",
+    size: "large",
+    image: "",
+    price: 100,
+  },
 // {
 //   name: "",
 //   commonName: "Peperomia",
@@ -199,16 +193,14 @@ export default [
 //   image: "",
 //   price: 15,
 // },
-// {
-//   name: "",
-//   commonName: "french lavender",
-//   about: "If your aesthetic leans more towards Provencal countryside than English garden, Laurens is the guy for you. Like his English cousin, Vanda, he's got fragrant purple blooms, but Laurens' flowers grow upwards from the top of his stalks, in little bursts resembling rabbit's ears. His blood runs warmer than Vanda's too, and he can't get enough sun. He'll be at his most beautiful and flowery during summer months.
-
-//   It's not just his looks that are magical either; Laurens' powers range from being a natural antiseptic to anti-inflammatory, and he works great in aromatherapy to help you relax. He can also curb nausea and headaches and works as an insect repellant - basically, there's not much he can't do. Laurens is amongst the most fragrant varieties of lavender, so cut off his blooms and use them to make your own essential oils, or make sachets of dried buds to keep under your pillow. We think you'll sleep a little easier knowing Laurens is around.",
-//   size: "small",
-//   image: "",
-//   price: 10,
-// },
+  {
+    name: "",
+    commonName: "french lavender",
+    about: "If your aesthetic leans more towards Provencal countryside than English garden, Laurens is the guy for you. Like his English cousin, Vanda, he's got fragrant purple blooms, but Laurens' flowers grow upwards from the top of his stalks, in little bursts resembling rabbit's ears. His blood runs warmer than Vanda's too, and he can't get enough sun. He'll be at his most beautiful and flowery during summer months. It's not just his looks that are magical either; Laurens' powers range from being a natural antiseptic to anti-inflammatory, and he works great in aromatherapy to help you relax. He can also curb nausea and headaches and works as an insect repellant - basically, there's not much he can't do. Laurens is amongst the most fragrant varieties of lavender, so cut off his blooms and use them to make your own essential oils, or make sachets of dried buds to keep under your pillow. We think you'll sleep a little easier knowing Laurens is around.",
+    size: "small",
+    image: "",
+    price: 10,
+  },
 // {
 //   name: "",
 //   commonName: "curly spider plant",
@@ -225,28 +217,28 @@ export default [
 //   price: 8
 
 // },
-{
-  name: "",
-  commonName: "Pachira Aquatica",
-  about: "There's real charm to this houseplant, with its umbrella-like growth and beautiful plaited trunk. It's pretty easy to care for, too. All it asks is a fairly bright spot in your home and an occasional drink. "/n" The money tree is known by many lovely names: French peanut, Guiana nut, Malabar chestnut, provision tree, monguba, pumpo. Or to botanists, pachira aquatica. It's usually found growing in swamps in Central and South America. It's plaited trunk doesn't occur naturally, but it's become traditional to plait it when grown as a houseplant. "/n" For reasons that aren't entirely clear, this plant is believed to bring good fortune and prosperity. In Asia, it's become very popular as an office plant, as it's thought it will help a business thrive. Got to be worth a try, right? "/n" This plant does well in both home or office. It just likes to live somewhere light, though out of direct sun, and to be watered when the top two inches of soil feel dry. It also likes to be misted occasionally. Look after it and in return it might make you rich, hopefully.",
-  size: "medium",
+  {
+    name: "",
+    commonName: "Pachira Aquatica",
+    about: "There's real charm to this houseplant, with its umbrella-like growth and beautiful plaited trunk. It's pretty easy to care for, too. All it asks is a fairly bright spot in your home and an occasional drink.", "\n": "The money tree is known by many lovely names: French peanut, Guiana nut, Malabar chestnut, provision tree, monguba, pumpo. Or to botanists, pachira aquatica. It's usually found growing in swamps in Central and South America. It's plaited trunk doesn't occur naturally, but it's become traditional to plait it when grown as a houseplant. \n For reasons that aren't entirely clear, this plant is believed to bring good fortune and prosperity. In Asia, it's become very popular as an office plant, as it's thought it will help a business thrive. Got to be worth a try, right? \n This plant does well in both home or office. It just likes to live somewhere light, though out of direct sun, and to be watered when the top two inches of soil feel dry. It also likes to be misted occasionally. Look after it and in return it might make you rich, hopefully.",
+    size: "medium",
   image: "",
   price: 60,
-}
+  }
 
 ]
 
-{
-  name: '',
-  commonName: Pachira Aquatica",
-  about: "There’s real charm to this houseplant, with its umbrella-like growth and beautiful plaited trunk. It’s pretty easy to care for, too. All it asks is a fairly bright spot in your home and an occasional drink.
+// {
+//   name: '',
+//   commonName: Pachira Aquatica",
+//   about: "There’s real charm to this houseplant, with its umbrella-like growth and beautiful plaited trunk. It’s pretty easy to care for, too. All it asks is a fairly bright spot in your home and an occasional drink.
 
-  The money tree is known by many lovely names: French peanut, Guiana nut, Malabar chestnut, provision tree, monguba, pumpo. Or to botanists, pachira aquatica. It’s usually found growing in swamps in Central and South America. It’s plaited trunk doesn’t occur naturally, but it’s become traditional to plait it when grown as a houseplant. 
+//   The money tree is known by many lovely names: French peanut, Guiana nut, Malabar chestnut, provision tree, monguba, pumpo. Or to botanists, pachira aquatica. It’s usually found growing in swamps in Central and South America. It’s plaited trunk doesn’t occur naturally, but it’s become traditional to plait it when grown as a houseplant. 
   
-  For reasons that aren’t entirely clear, this plant is believed to bring good fortune and prosperity. In Asia, it’s become very popular as an office plant, as it’s thought it will help a business thrive. Got to be worth a try, right?
+//   For reasons that aren’t entirely clear, this plant is believed to bring good fortune and prosperity. In Asia, it’s become very popular as an office plant, as it’s thought it will help a business thrive. Got to be worth a try, right?
   
-  This plant does well in both home or office. It just likes to live somewhere light, though out of direct sun, and to be watered when the top two inches of soil feel dry. It also likes to be misted occasionally. Look after it and in return it might make you rich, hopefully.",
-  size: "medium",
-  image: "",
-  price: 60,
-}
+//   This plant does well in both home or office. It just likes to live somewhere light, though out of direct sun, and to be watered when the top two inches of soil feel dry. It also likes to be misted occasionally. Look after it and in return it might make you rich, hopefully.",
+//   size: "medium",
+//   image: "",
+//   price: 60,
+// }

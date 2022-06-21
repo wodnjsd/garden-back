@@ -4,7 +4,8 @@
   "description": "A style guide application for SEI",
   "main": "server.js",
   "scripts": {
-    "start": "npx nodemon server.js"
+    "start": "npx nodemon server.js",
+    "test": "NODE_ENV=test mocha __tests__/*_test.js --require __tests__/helper.js --recursive --exit"
   },
   "author": "",
   "license": "ISC",

@@ -13,7 +13,6 @@ const plantSchema = new mongoose.Schema({
   name: { type: String, required: false },
   commonName: { type: String, required: true },
   about: { type: String, required: true },
-  commonName: { type: String, required: true },
   likes: { type: String, required: true },
   size: { type: String, required: true },
   image: { type: String, required: false },

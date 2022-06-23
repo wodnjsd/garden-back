@@ -34,6 +34,10 @@ export default function secureRoute(req, res, next) {
     // ? Adding the current user to our request
     req.currentUser = user
 
+    if (user.isAdmin === true) {
+      console.log('yes')
+    }
+
     // ! Finally, pass it on to the route
     next()
   })  

@@ -133,7 +133,7 @@ export default [
     about: "If your aesthetic leans more towards Provencal countryside than English garden, Laurens is the guy for you. Like his English cousin, Vanda, he's got fragrant purple blooms, but Laurens' flowers grow upwards from the top of his stalks, in little bursts resembling rabbit's ears. His blood runs warmer than Vanda's too, and he can't get enough sun. He'll be at his most beautiful and flowery during summer months.",
     likes: "A sunny spot, well drained soil",
     size: "Small",
-    image: "",
+    image: "https://res.cloudinary.com/dvvy68du7/image/upload/v1655563871/pexels-joyce-toh-2746155_1_u4bkxa.jpg",
     price: 10,
   },
   {

@@ -22,13 +22,13 @@ describe('Testing GET /api/plants', () => {
     tearDown(done)
   })
 
-  // ! FINALLY SOME TESTS:
+  // ! SOME TESTS:
   it('should return a 200 response status code', (done) => {
     // ! api: supertest
     api.get('api/plants')
       .end((err, res) => {
         // ! Chai: make an assertion
-        expect(res.status).to.equal(200)
+        expect(res.status).to.eq(200)
         // ! Call done() when the test is finished.
         done()
       })
@@ -39,9 +39,94 @@ describe('Testing GET /api/plants', () => {
     api.get('api/plants')
       .end((err, res) => {
         expect(res.body).to.be.an("array")
-        expect(res.body.length).to.be.equal(17)
+        // expect(res.body.length).to.be.eq(17)
         done()
       })
+  })
+
+})
+
+//  We are now adding a different test for a different route
+describe('Testing GET /api/plants/:plantId', () => {
+
+  beforeEach(done => {
+    setup(done)
+  })
+  afterEach(done => {
+    tearDown(done)
+  })
+
+  it('should return a plant object', (done) => {
+    // ! Getting all the plants, just so we can get an ID for one.
+    api.get('/api/plants')
+      .end((err, res) => {
+        expect(res.body).to.be.an("array")
+        const plantId = res.body[0]._id
+
+        // ! Getting a plant using that ID (of the first plant (based off the index, right!))
+        api.get(`/api/plants/${plantId}`)
+          .end((err, res) => {
+            // ! Check if its an object.
+            expect(res.body).to.be.an("object")
+            done()
+          })
+
+      })
+  })
+
+})
+//  POST test 
+describe('Testing POST /api/plants', () => {
+
+  beforeEach(done => {
+    setup(done)
+  })
+  afterEach(done => {
+    tearDown(done)
+  })
+
+  it('should return an object', (done) => {
+    api.post('/api/plants')
+      .end((err, res) => {
+        expect(res.body).to.be.an("object")
+        done()
+      })
+  })
+
+})
+//  ! DELETE test
+describe('Testing DELETE /api/plants/:plantId', () => {
+
+  beforeEach(done => {
+    setup(done)
+  })
+  afterEach(done => {
+    tearDown(done)
+  })
+  it('should return a status code 401', (done) => {
+    api.get('/api/plants')
+      .end((err, res) => {
+        expect(res.body).to.be.an("array")
+        const plantId = res.body[0]._id
+
+        api.post('/api/login')
+          .send({
+            "email": "robynamysmith92@gmail.com",
+            "password": "Holiday!23",
+          })
+          .end((err, res)=> {
+            expect(res.status).to.eq(200)
+            expect(res.body.token).to.be.a("string")
+          })
+      
+        api.delete(`/api/plants/${plantId}`)
+          .end((err, res) => {
+            // It should return 'Unauthorized' as the user is not logged in, so therefore we cannot test the token to make sure that user can delete the plant
+            expect(res.status).to.eq(401)
+            done()
+          })
+      })
+
   })
 
 })

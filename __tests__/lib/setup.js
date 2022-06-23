@@ -21,6 +21,7 @@ export default async function setup(done) {
         size: "Small",
         image: "https://res.cloudinary.com/dgicm5dgb/image/upload/v1655563570/succulent_zrxyef.jpg",
         price: 6,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -30,6 +31,7 @@ export default async function setup(done) {
         size: "Medium",
         image: "https://res.cloudinary.com/dgicm5dgb/image/upload/v1655563910/snakeplant_smmxw7.jpg",
         price: 10,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -39,6 +41,7 @@ export default async function setup(done) {
         size: "Medium",
         image: "https://res.cloudinary.com/dgicm5dgb/image/upload/v1655563910/bostonfern_ku52tk.jpg",
         price: 10,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -48,6 +51,7 @@ export default async function setup(done) {
         size: "Large",
         image: "https://res.cloudinary.com/dgicm5dgb/image/upload/v1655563907/Aspidistra_wq27jp.jpg",
         price: 24,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -57,6 +61,7 @@ export default async function setup(done) {
         size: "Medium",
         image: "https://res.cloudinary.com/dgicm5dgb/image/upload/v1655563991/SwissCheesePlant_jbxn99.jpg",
         price: 55,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -66,6 +71,7 @@ export default async function setup(done) {
         size: "Medium",
         image: "https://res.cloudinary.com/dlxbte5xh/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1655821519/pexels-th%C3%A0nh-%C4%91%E1%BB%97-5188783_vy0sib.jpg",
         price: 17,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -75,6 +81,7 @@ export default async function setup(done) {
         size: "Medium",
         image: "https://res.cloudinary.com/dlxbte5xh/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1655823001/pexels-madison-inouye-1382389_dtpoa0.jpg",
         price: 15,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -84,6 +91,7 @@ export default async function setup(done) {
         size: "Large",
         image: "",
         price: 20,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -93,6 +101,7 @@ export default async function setup(done) {
         size: "Medium",
         image: "",
         price: 20,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -102,6 +111,7 @@ export default async function setup(done) {
         size: "Large",
         image: "",
         price: 100,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -111,6 +121,7 @@ export default async function setup(done) {
         size: "Small",
         image: "https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563345/pexels-ekaterina-bolovtsova-9130870_ksqdzw.jpg",
         price: 8,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -120,6 +131,7 @@ export default async function setup(done) {
         size: "Small",
         image: "https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563100/pexels-kulbir-7365049_ze1urb.jpg",
         price: 6,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -129,6 +141,7 @@ export default async function setup(done) {
         size: "Small",
         image: "",
         price: 8,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -138,6 +151,7 @@ export default async function setup(done) {
         size: "Small",
         image: "",
         price: 15,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -147,6 +161,7 @@ export default async function setup(done) {
         size: "Small",
         image: "",
         price: 10,
+        user: user[0]._id,
       },
       {
         name: "",
@@ -156,6 +171,7 @@ export default async function setup(done) {
         size: "Small",
         image: "",
         price: 8,
+        user: user[0]._id,
     
       },
       {
@@ -166,10 +182,11 @@ export default async function setup(done) {
         size: "Medium",
         image: "https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg",
         price: 60,
+        user: user[0]._id,
       }
     ])
   } catch (e) {
-    console.log(e)
+    console.log("hi")
   }
   done()
 

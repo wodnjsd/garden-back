@@ -25,7 +25,7 @@ describe('Testing GET /api/plants', () => {
   // ! SOME TESTS:
   it('should return a 200 response status code', (done) => {
     // ! api: supertest
-    api.get('api/plants')
+    api.get('/api/plants')
       .end((err, res) => {
         // ! Chai: make an assertion
         expect(res.status).to.eq(200)
@@ -36,7 +36,7 @@ describe('Testing GET /api/plants', () => {
 
   it('should return an array of 17 plants', (done) => {
     // ! api: supertest
-    api.get('api/plants')
+    api.get('/api/plants')
       .end((err, res) => {
         expect(res.body).to.be.an("array")
         // expect(res.body.length).to.be.eq(17)
@@ -75,6 +75,7 @@ describe('Testing GET /api/plants/:plantId', () => {
   })
 
 })
+
 //  POST test 
 describe('Testing POST /api/plants', () => {
 
@@ -94,7 +95,7 @@ describe('Testing POST /api/plants', () => {
   })
 
 })
-//  ! DELETE test
+// DELETE test
 describe('Testing DELETE /api/plants/:plantId', () => {
 
   beforeEach(done => {

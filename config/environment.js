@@ -7,8 +7,8 @@ export const mongoURL = 'mongodb://127.0.0.1:27017'
 // ! DB URL will be pokemondb-test. If you're running express normally
 // ! it will be pokemondb
 export const dbURL = process.env.NODE_ENV === 'test' ?
-  `${mongoURL}/plantdb-test` : 
-  `${mongoURL}/plantdb`
+  `${mongoURL}/plantsdb-test` : 
+  `${mongoURL}/plantsdb`
 
 // ! Create a secret for JWT verification
 export const secret = 'horsebatterycowstapleapple'

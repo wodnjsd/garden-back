@@ -16,11 +16,11 @@ async function seed() {
 
   // ! Create my user(s) first
   const users = await User.create(userData)
-  const nickUser = users[0]
+  const spikeUser = users[0]
 
   // ! Add a user to each pokemon
   const plantsWithUsers = plantData.map(plant => {
-    return { ...plant, user: nickUser }
+    return { ...plant, user: spikeUser }
   })
 
   // ! Create the pokemon with users

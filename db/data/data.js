@@ -70,7 +70,7 @@ export default [
     about: "Once you've picked and eaten a fig straight off the tree, warm from the sun, you'll wonder why you haven't been growing them for years. Not only is the fruit delicious, the leaves have a soft fragrance that hangs in the air all through summer.",
     likes: "Sunny spot, moist soil",
     size: "Large",
-    image: "",
+    image: "https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg",
     price: 20,
   },
   {

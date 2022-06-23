@@ -79,7 +79,7 @@ export default [
     about: "As you may have guessed from its love of steamy conditions, the peace lily is native to tropical rainforests, specifically those of South and Central America. It's thought it was brought to Europe some time in the late 1800s and it's adapted well to the UK's less than tropical conditions.",
     likes: "Light watering, most light conditions, humidity",
     size: "Medium",
-    image: "",
+    image: "https://res.cloudinary.com/djuip85dc/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1656005216/severin-candrian-lmczPemWjQQ-unsplash_nqvyrf.jpg",
     price: 20,
   },
   {
@@ -115,7 +115,7 @@ export default [
     about: "There is an enormous variety of cacti around the world, most of them cheerfully living in hot, dry conditions where most other plants would perish. They're succulents, which means they can store large amounts of water to keep them alive through long droughts.",
     likes: "Light watering, bright light",
     size: "Small",
-    image: "",
+    image: "https://res.cloudinary.com/djuip85dc/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1656005220/annie-spratt-fbAnIjhrOL4-unsplash_k6yuxt.jpg",
     price: 8,
   },
   {
@@ -124,7 +124,7 @@ export default [
     about: "Native to the Yunnan and Sichuan provinces of southern China, the Chinese money plant was first brought to the UK in 1906 by Scottish botanist George Forrest (yes, we know the exact man who found it). It became a popular houseplant later in the 20th century because it is simple to grow and really easy to propagate, meaning friends could pass cuttings around amongst themselves. That earned it the nickname 'pass it on plant'. ",
     likes: "Light watering, medium light",
     size: "Small",
-    image: "",
+    image: "https://res.cloudinary.com/djuip85dc/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1656005646/yu-xuan-lee-2i5ZX7Fid4M-unsplash_thsfn6.jpg",
     price: 15,
   },
   {

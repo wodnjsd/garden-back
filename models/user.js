@@ -31,6 +31,7 @@ const userSchema = new mongoose.Schema({
     validate: (password) => /(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password),
   },
   cart: [cartSchema],
+  isAdmin: { type: Boolean, default: false },
 })
 
 userSchema.pre('save', function hashPassword(next) {

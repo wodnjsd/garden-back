@@ -70,7 +70,7 @@ export default [
     about: "Once you've picked and eaten a fig straight off the tree, warm from the sun, you'll wonder why you haven't been growing them for years. Not only is the fruit delicious, the leaves have a soft fragrance that hangs in the air all through summer.",
     likes: "Sunny spot, moist soil",
     size: "Large",
-    image: "",
+    image: "https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg",
     price: 20,
   },
   {
@@ -88,7 +88,7 @@ export default [
     about: "The bay tree, or bay laurel, has been a beloved plant for centuries. The ancient Greeks and the ancient Romans considered it quite the status symbol. Wreaths of bay laurel were worn on the heads of the most important members of society and given as prizes in sporting competitions. Bay was a plant for champions.",
     likes: "Light watering",
     size: "Large",
-    image: "",
+    image: "https://res.cloudinary.com/dvvy68du7/image/upload/v1656006676/pexels-eli%CC%84na-ara%CC%84ja-4050790_ttmwuk.jpg",
     price: 100,
   },
   {
@@ -133,7 +133,7 @@ export default [
     about: "If your aesthetic leans more towards Provencal countryside than English garden, Laurens is the guy for you. Like his English cousin, Vanda, he's got fragrant purple blooms, but Laurens' flowers grow upwards from the top of his stalks, in little bursts resembling rabbit's ears. His blood runs warmer than Vanda's too, and he can't get enough sun. He'll be at his most beautiful and flowery during summer months.",
     likes: "A sunny spot, well drained soil",
     size: "Small",
-    image: "",
+    image: "https://res.cloudinary.com/dvvy68du7/image/upload/v1655563871/pexels-joyce-toh-2746155_1_u4bkxa.jpg",
     price: 10,
   },
   {

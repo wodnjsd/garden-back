@@ -88,7 +88,7 @@ export default [
     about: "The bay tree, or bay laurel, has been a beloved plant for centuries. The ancient Greeks and the ancient Romans considered it quite the status symbol. Wreaths of bay laurel were worn on the heads of the most important members of society and given as prizes in sporting competitions. Bay was a plant for champions.",
     likes: "Light watering",
     size: "Large",
-    image: "",
+    image: "https://res.cloudinary.com/dvvy68du7/image/upload/v1656006676/pexels-eli%CC%84na-ara%CC%84ja-4050790_ttmwuk.jpg",
     price: 100,
   },
   {

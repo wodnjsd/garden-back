@@ -142,7 +142,7 @@ export default [
     about: "A classic of the houseplant world, the curly spider plant has been grown indoors for decades because it's incredibly easy to take care of. In the wild, it's most commonly found in tropical parts of Africa and Australia.",
     likes: "light watering, most light conditions",
     size: "Small",
-    image: "",
+    image: "https://res.cloudinary.com/djuip85dc/image/upload/v1656147969/susan-wilkinson-Mfpygdu4A0E-unsplash_cqh87z.jpg",
     price: 8,
 
   },

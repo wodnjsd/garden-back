@@ -25,6 +25,20 @@ async function register(req, res, next) {
     next(err)
   }
 }
+
+async function cart(req, res) {
+  try {
+    const userId = req.currentUser
+    const user = await User.findById(userId)
+    const cart = user.cart
+    res.json({
+      cart,
+    })
+
+  } catch (e) {
+    console.log(e)
+  }
+}
   
 
 async function login(req, res) {
@@ -59,4 +73,5 @@ async function login(req, res) {
 export default {
   register,
   login,
+  cart,
 }

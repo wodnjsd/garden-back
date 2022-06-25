@@ -34,8 +34,17 @@ const userSchema = new mongoose.Schema({
   isAdmin: { type: Boolean, default: false },
 })
 
-userSchema.pre('save', function hashPassword(next) {
-  this.password = bcrypt.hashSync(this.password, bcrypt.genSaltSync())
+// userSchema.pre('save', function hashPassword(next) {
+//   if (this.isModified('password')){
+//     this.password = bcrypt.hashSync(this.password, bcrypt.genSaltSync())
+//   }  
+//   next()
+// })
+
+userSchema.pre('save', function (next) {
+  if (this.isModified('password')) {
+    this.password = bcrypt.hashSync(this.password, bcrypt.genSaltSync())
+  }
   next()
 })
 

@@ -16,14 +16,15 @@ router.route("/plants/:plantId")
   .get(controller.getSinglePlant)
   .delete(secureRoute, controller.removePlant)
   .put(secureRoute, controller.updatePlant)
+  .post(secureRoute, cartController.createCart)
 
 router.route("/plants/:plantId/reviews")
   .post(secureRoute, reviewController.createReview)
 
-router.route("/plants/:userId")
-  // .get(userController.cartPlant)
-  .post(cartController.createCart)
-  // .delete(userController.deletePlant)
+// router.route("/plants/:userId")
+//   .get(userController.cartPlant)
+  
+//   .delete(userController.deletePlant)
 
 
 router.route("/register")

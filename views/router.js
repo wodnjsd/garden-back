@@ -4,6 +4,7 @@ import reviewController from "../controllers/reviewController.js"
 import controller from "../controllers/controller.js" 
 import userController from "../controllers/userController.js"
 import secureRoute from "../middleware/secureRoute.js"
+import cartController from "../controllers/cartController.js"
 
 const router = express.Router()
 
@@ -19,9 +20,10 @@ router.route("/plants/:plantId")
 router.route("/plants/:plantId/reviews")
   .post(secureRoute, reviewController.createReview)
 
-// router.route("cart")
-//   .get(userController.cartPlant)
-//   .delete(userController.deletePlant)
+router.route("/plants/:userId")
+  // .get(userController.cartPlant)
+  .post(cartController.createCart)
+  // .delete(userController.deletePlant)
 
 
 router.route("/register")

@@ -34,6 +34,39 @@ async function createCart(req, res) {
   }
 }
 
+async function removePlant(req, res) {
+  try {
+    const plantName = req.params.plantName
+    const userId = req.currentUser
+    const user = await User.findById(userId)
+    const userCart = user.cart
+    console.log(userCart)
+    const plantToDelete = userCart.find(item => 
+      item.name === plantName
+    )
+
+    const index = userCart.indexOf(plantToDelete)
+    console.log(plantToDelete)
+
+    // if (!plantToDelete.user.equals(user._id)) {
+    //   return res.json({ message: 'Unauthorized' })
+    // }
+
+    userCart.splice(index, 1)
+
+    const savedUser = await user.save({ validateBeforeSave: false })
+    console.log(savedUser)
+
+    res.sendStatus(204)
+  } catch (e) {
+    console.log(e)
+    res.status(422).json({ message: "This Plant ID is in an invalid format." })
+  }
+}
+
+
+
 export default {
   createCart,
+  removePlant,
 }

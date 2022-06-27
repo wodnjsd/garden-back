@@ -27,6 +27,9 @@ router.route("/plants/:plantId/reviews")
 //   .delete(userController.deletePlant)
 router.route("/cart")
   .get(secureRoute, userController.cart)
+
+router.route("/cart/:plantName")
+  .delete(secureRoute, cartController.removePlant)
   
 
 router.route("/register")

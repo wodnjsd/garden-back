@@ -15,6 +15,7 @@ async function getPlants(req, res) {
     res.status(500).send({ message: "We had problems handling your request on our side 😖. Please try again later." })
   }
 }
+  
 
 //! For admin only
 async function createPlant(req, res) {

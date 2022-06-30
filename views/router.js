@@ -21,16 +21,11 @@ router.route("/plants/:plantId")
 router.route("/plants/:plantId/reviews")
   .post(secureRoute, reviewController.createReview)
 
-// router.route("/plants/:userId")
-//   .get(userController.cartPlant)
-  
-//   .delete(userController.deletePlant)
 router.route("/cart")
   .get(secureRoute, userController.cart)
 
 router.route("/cart/:plantName")
   .delete(secureRoute, cartController.removePlant)
-  
 
 router.route("/register")
   .post(userController.register)

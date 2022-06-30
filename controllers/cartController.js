@@ -9,16 +9,13 @@ async function createCart(req, res) {
     const userId = req.currentUser
     const user = await User.findById(userId)
     console.log(req.currentUser.password)
-    // ! Grab the info from the request body.
-    // const cart = req.body
-    // ! Get the pokemon we're comment on.
+
     const plant = await Plant.findById(plantId).populate('user')
-    // ! Handle it if no pokemon is found
+    // ! Handle it if no plant is found
     if (!plant) {
       return res.json({ message: 'No plant found' })
     }
     // ! Push the new plant to the plants array
-    // cart.user = user
     // ! Pushing our new plant to this cart does
     // ! NOT update it in the database YET. 
     user.cart.push(plant)
@@ -47,10 +44,6 @@ async function removePlant(req, res) {
 
     const index = userCart.indexOf(plantToDelete)
     console.log(plantToDelete)
-
-    // if (!plantToDelete.user.equals(user._id)) {
-    //   return res.json({ message: 'Unauthorized' })
-    // }
 
     userCart.splice(index, 1)
 

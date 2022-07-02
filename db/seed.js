@@ -10,7 +10,7 @@ import { connectToDb, disconnectDb } from './helpers.js'
 async function seed() {
   await connectToDb()
 
-  await mongoose.connection.db.dropDatabase()
+  // await mongoose.connection.db.dropDatabase()
 
   console.log('Connected to the database! 🌱')
 

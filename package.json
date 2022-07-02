@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "npx nodemon server.js",
+    "seed": "node db/seed.js",
     "test": "NODE_ENV=test mocha __tests__/*_test.js --require __tests__/helper.js --recursive --exit"
   },
   "author": "",

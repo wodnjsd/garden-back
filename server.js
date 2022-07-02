@@ -8,6 +8,7 @@ import router from "./views/router.js"
 import mongoSanitize from 'express-mongo-sanitize';
 import errorHandler from "./middleware/errorHandler.js";
 import cors from 'cors'
+import { port } from './config/environment.js'
 
 // ! Moved the app out of startServer so I can export it below
 const app = express()
@@ -30,7 +31,7 @@ async function startServer() {
 
     console.log('Connected to DB!')
 
-    app.listen(4000, () => console.log("🤖 Hello express!"))
+    app.listen(port, () => console.log("🤖 Hello express!"))
   } catch (e) {
     await disconnectDb()
   }

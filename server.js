@@ -5,9 +5,9 @@ import express from "express"
 import { connectToDb, disconnectDb } from "./db/helpers.js"
 import logger from "./middleware/logger.js"
 import router from "./views/router.js"
-
 import mongoSanitize from 'express-mongo-sanitize';
 import errorHandler from "./middleware/errorHandler.js";
+import cors from 'cors'
 
 // ! Moved the app out of startServer so I can export it below
 const app = express()
@@ -15,6 +15,8 @@ const app = express()
 async function startServer() {
   try {
     app.use(express.json())
+
+    app.use(cors())
 
     app.use(mongoSanitize());
 

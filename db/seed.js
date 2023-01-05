@@ -1,6 +1,6 @@
 // ? A file that will be used to 'seed' our database with initial data.
 
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
 import Plant from '../models/plants.js'
 import User from '../models/user.js'
 import plantData from './data/data.js'

@@ -19,7 +19,7 @@ async function getPlants(req, res) {
 async function createPlant(req, res) {
   try {
     const newPlant = req.body
-    // ! Getting the logged in user, and attaching it to the pokemon.
+    // ! Getting the logged in user, and attaching it to the plant.
     newPlant.user = req.currentUser
     const createdPlant = await Plant.create(newPlant)
     res.status(201).json(createdPlant)

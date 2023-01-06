@@ -2,7 +2,7 @@ import Plant from '../models/plants.js'
 
 async function createReview(req, res) {
   try {
-    // ! We need to provide the pokemon ID we're commenting on.
+    // ! We need to provide the plant ID we're commenting on.
     const plantId = req.params.plantId
     // ! We also need to get the user/user ID for the user commenting.
     const user = req.currentUser
@@ -16,7 +16,7 @@ async function createReview(req, res) {
     }
     // ! Push the new comment to the comments array
     review.user = user
-    // ! Pushing our new comment to this pokemon does
+    // ! Pushing our new comment to this plant does
     // ! NOT update it in the database YET. 
     plant.reviews.push(review)
 
